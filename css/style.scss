@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+header {
+    background-color: black;
+    background-attachment: fixed;
+    background-image: url(../media/mainbg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.center-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: white;
+    
+    .header-container {
+        padding: 1rem;
+        text-align: justify;
+    }
+
+    .header-button {
+        margin-top: 2rem;
+
+        a {
+            font-size: 14px;
+            text-decoration: none;
+        }
+    }
+}
+
+.container {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.row {
+    display: block;
+}
+
+.row-2 {
+    display: block;
+    width: 100%;
+}
+
+#about {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#subscribe {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #222222;
+    text-align: center;
+    color: white;
+}
+
+.input-form, .btn{
+    outline: none;
+    border: 0;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba($color: #000000, $alpha: 0.3);
+}
+
+.btn {
+    background-color: #3f3f3f;
+    color: white;
+    cursor: pointer;
+}
+
+.my-btn {
+    color: #FFF;
+    transition: all 0.5s;
+    position: relative;
+  }
+  .my-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(255,255,255,0.1);
+    transition: all 0.3s;
+  }
+  .my-btn:hover::before {
+    opacity: 0 ;
+    transform: scale(0.5,0.5);
+  }
+  .my-btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border: 1px solid rgba(255,255,255,0.5);
+    transform: scale(1.2,1.2);
+  }
+  .my-btn:hover::after {
+    opacity: 1;
+    transform: scale(1,1);
+  }
+
+#contact {
+
+    h3 {
+        color: black;
+    }
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    .contact-form {
+        width: 90%;
+    }
+    .form-group {
+        margin-bottom: 1rem;
+    }
+    label {
+        color: black;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .input-form {
+        display: block;
+        width: 100%;
+        
+    }
+    
+}
+
+footer {
+    background-color: #222222;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .center-items {
+        .header-container {
+            width: 600px;
+        }
+    }
+
+    .container {
+        margin: 0 auto;
+        max-width: 960px;
+    }
+
+    .row {
+        display: flex;
+    }
+
+    .col-2 {
+        display: inline-block;
+        width: 50%;
+    }
+
+    #about {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    #subscribe {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+
+        .input-form {
+            width: 400px;
+        }
+    }
+
+
+    #contact {
+        // background-attachment: fixed;
+        background-image: url(https://images.unsplash.com/photo-1584967918940-a7d51b064268?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80);
+        // background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    
+        .contact-form {
+            background-color: #f3f3f3;
+            box-shadow: 0 2px 5px rgba($color: #000000, $alpha: 0.3);
+            padding: 2rem;
+            width: 600px;
+            border-radius: 5px;
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        label {
+            color: black;
+            display: block;
+            margin-bottom: 5px;
+        }
+    
+        .input-form {
+            display: block;
+            width: 100%;
+        }
+        
+    }
+    
+
+}
