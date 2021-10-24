@@ -5,3 +5,7 @@ Week 6: Responsive Webpage
 HTML + CSS
 
 Simple Landing Page with contact form
+
+Demo:
+
+https://lazean214.github.io/fi-responsive/
