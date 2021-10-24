@@ -1,2 +1,7 @@
-# fi-responsive
-Simple Responsive Web Page for Filipino Institute Students
+# Filipino Institute Activity
+
+Week 6: Responsive Webpage
+
+HTML + CSS
+
+Simple Landing Page with contact form
